@@ -5,7 +5,7 @@ document.addEventListener("deviceready",function(){
 	 navigators.vibrate(1000);
  });//tap de vibrar
   $('btnbeep').on('tap',function(){
-	 navigator.beep(1);
+	 navigator.notification.beep(1);
  });//tap de beep 
  $('#izquierda').on('swipeleft',function(){
 	 alert("barrido a la izquierda");
@@ -13,7 +13,7 @@ document.addEventListener("deviceready",function(){
   $('#derecha').on('swiperight',function(){
 	 alert("barrido a la derecha");
  });//derecha
- 
+ navigator.beep(1);
   
   
 }); 
